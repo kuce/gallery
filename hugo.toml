@@ -1,0 +1,31 @@
+baseURL = "https://kuce.github.io/gallery/"
+defaultContentLanguage = "en"
+title = "Gallery"
+theme = "gallery"
+enableRobotsTXT = true
+
+timeZone = "UTC"
+
+disableKinds = ["taxonomy"]
+
+[params]
+  defaultTheme = "dark"
+  description = "A collection of photo albums."
+  title = "Gallery"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 85
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[services]
+  [services.rss]
+    limit = 100
