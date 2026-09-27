@@ -19,7 +19,7 @@ disableKinds = ["taxonomy"]
   section = ["HTML"]
 
 [imaging]
-  quality = 85
+  quality = 100
   resampleFilter = "CatmullRom"
   [imaging.exif]
     disableDate = false
